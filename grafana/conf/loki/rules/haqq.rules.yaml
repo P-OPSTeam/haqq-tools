@@ -1,0 +1,13 @@
+groups:
+  - name: haqqd
+    rules:
+      - alert: haqqd_Log_ERR_detected
+        expr: count_over_time ({unit="haqqd.service"} |~ "ERR.*"[1m]) >= 1
+        for: 0m
+        labels:
+            severity: warning
+            category: logs
+        annotations:
+            title: "haqqd logged an ERR"
+            description: "haqqd logged an ERR"
+            logurl: "https://pops.one"
