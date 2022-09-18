@@ -29,6 +29,8 @@ sudo apt install -y docker-compose docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER #you need to logout and login back after that
 ```
 
+node needs to have prometheus telemetry configured.
+
 ## Installing the stack
 
 ### Clone the repo

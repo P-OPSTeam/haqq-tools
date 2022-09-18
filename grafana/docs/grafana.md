@@ -24,7 +24,7 @@ Click on for the `4 squares` on the left menu, then `browse`, then `General`, an
 
 You will then be able to see your validator dashboard :
 
-![Validator dashboard](img/grafana-validator-dashboard.png?raw=true "Validator dashboard")
+![Validator dashboard](img/grafana-dashboard.png?raw=true "Validator dashboard")
 
 Feel free to explore the other dashboard and ask us any questions. You can reach out to us on discord https://discord.gg/jRAmy7uS8v or telegram https://t.me/POPS_Team_Validator
 
@@ -35,7 +35,7 @@ Click on the `compass` on the left menu, then `Explorer`, on top click `Promethe
 
 ![Grafana explore](img/grafana-explore.png?raw=true "Grafana explore")
 
-you should now be able to use the `builder` to select a label (ie `unit`) and the value ie `umeed` then click on the `Run Query` to see the logs
+you should now be able to use the `builder` to select a label (ie `unit`) and the value ie `haqqd` then click on the `Run Query` to see the logs
 
 Below an example with the logs of the loki container
 
@@ -47,12 +47,6 @@ Below an example with the logs of the loki container
 
 Click on the bell on the left menu
 
-![Grafana Alert](img/grafana-alert.png?raw=true "Grafana Alert")
+![Grafana Alert](img/grafana-alerts.png?raw=true "Grafana Alert")
 
 > Free to navigate into all the defined rules which you can find the same under the conf/prometheus/rules folder
-
-and if you have configured correctly your pagerduty integration key you might start receiving alert
-
-![Pagerduty Alert](img/pagerduty-alert.png?raw=true "Pagerduty Alert")
-
-> Sending of the alerts are managed by alertmanager, checkout the config file alertmanager.yaml
